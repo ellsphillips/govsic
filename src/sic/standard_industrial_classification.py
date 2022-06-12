@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from typing import Union
 
+from sic.exceptions import InvalidSICCodeError
+
 SICCode = Union[str, int]
 
 @dataclass
@@ -10,7 +12,9 @@ class SIC:
 
     def __post_init__(self) -> None:
         if len(str(self.code)) > 5:
-            raise ValueError
+            raise InvalidSICCodeError(
+                message="SIC codes should be at most 5 digits long."
+            )
 
         self.code = str(self.code).zfill(5)
 
