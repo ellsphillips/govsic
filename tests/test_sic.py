@@ -19,6 +19,10 @@ def test_invalid_exception():
     exception_raised = exc_info.value
     assert str(exception_raised) == "SIC codes should be at most 5 digits long."
 
+def test_class_repr():
+    sic = SIC(58290)
+    assert f"{sic!r}" == "[J] 58.29/0"
+
 @pytest.mark.parametrize(
     "example_input, expectation",
     [
