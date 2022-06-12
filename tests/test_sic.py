@@ -44,3 +44,15 @@ def test_code_validity(example_input: int, expectation: Any):
 )
 def test_sic_component(example_input: str, expectation: Component):
     assert SIC(example_input).component == expectation.name
+
+@pytest.mark.parametrize(
+    "example_input, expectation",
+    [
+        ("71121", "M"),
+        ("08110", "B"),
+        ("01450", "A"),
+    ],
+)
+def test_section(example_input: str, expectation: str):
+    sic = SIC(example_input)
+    assert sic.section == expectation
