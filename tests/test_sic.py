@@ -3,6 +3,7 @@ from typing import Any
 
 import pytest
 from sic import SIC
+from sic.constants import Component
 from sic.exceptions import InvalidSICCodeError
 
 
@@ -30,3 +31,16 @@ def test_invalid_exception():
 def test_code_validity(example_input: int, expectation: Any):
     with expectation:
         assert SIC(example_input).is_valid is True
+
+@pytest.mark.parametrize(
+    "example_input, expectation",
+    [
+        ("00000", Component.DIVISION),
+        ("05000", Component.DIVISION),
+        ("05100", Component.GROUP),
+        ("08110", Component.CLASS),
+        ("05101", Component.SUBCLASS),
+    ],
+)
+def test_sic_component(example_input: str, expectation: Component):
+    assert SIC(example_input).component == expectation.name
