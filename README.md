@@ -2,7 +2,7 @@
 
 A lightweight library to parse and interface Standard Industrial Classification instances.
 
-![Tests](https://github.com/ellsphillips/sic/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/ellsphillips/sic/actions/workflows/config.yml/badge.svg)
 
 ## Installation
 
