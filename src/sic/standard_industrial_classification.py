@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Union
 
+from sic.data.glossary import SIC_GLOSSARY
 from sic.exceptions import InvalidSICCodeError
 
 SICCode = Union[str, int]
@@ -20,4 +21,4 @@ class SIC:
 
     @property
     def is_valid(self) -> bool:
-        return True
+        return self.code in SIC_GLOSSARY
