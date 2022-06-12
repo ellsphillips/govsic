@@ -1,3 +1,6 @@
+from contextlib import nullcontext as does_not_raise
+from typing import Any
+
 import pytest
 from sic import SIC
 from sic.exceptions import InvalidSICCodeError
@@ -14,3 +17,16 @@ def test_invalid_exception():
 
     exception_raised = exc_info.value
     assert str(exception_raised) == "SIC codes should be at most 5 digits long."
+
+@pytest.mark.parametrize(
+    "example_input, expectation",
+    [
+        (1300, does_not_raise()),
+        (9000, does_not_raise()),
+        (26514, does_not_raise()),
+        (199999, pytest.raises(InvalidSICCodeError)),
+    ],
+)
+def test_code_validity(example_input: int, expectation: Any):
+    with expectation:
+        assert SIC(example_input).is_valid is True
