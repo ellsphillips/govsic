@@ -1,4 +1,4 @@
-from sic import SIC
+from govsic import SIC
 
 
 def main() -> None:

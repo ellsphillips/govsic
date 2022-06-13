@@ -2,9 +2,9 @@ from contextlib import nullcontext as does_not_raise
 from typing import Any
 
 import pytest
-from sic import SIC
-from sic.constants import Component
-from sic.exceptions import InvalidSICCodeError
+from govsic import SIC
+from govsic.constants import Component
+from govsic.exceptions import InvalidSICCodeError
 
 
 def test_post_init_parser():
