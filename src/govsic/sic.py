@@ -32,7 +32,8 @@ class SIC:
 
     @property
     def component(self) -> str:
-        for index, character in enumerate(str(self.code)[::-1]):
+        relevance = str(self.code)[:-4:-1]
+        for index, character in enumerate(relevance):
             if int(character) > 0:
                 return list(Component)[len(str(self.code)) - index - 1].name
         return "DIVISION"

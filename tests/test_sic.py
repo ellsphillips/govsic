@@ -8,16 +8,24 @@ from govsic.exceptions import InvalidSICCodeError
 
 
 def test_post_init_parser():
-    sic = SIC(100)
-    assert sic.code == "00100"
+    sic = SIC(1000)
+    assert sic.code == "01000"
 
-def test_invalid_exception():
+def test_invalid_length():
     with pytest.raises(InvalidSICCodeError) as exc_info:
         sic = SIC(123456)
         print(sic.code)
 
     exception_raised = exc_info.value
     assert str(exception_raised) == "SIC codes should be at most 5 digits long."
+
+def test_below_section_a():
+    with pytest.raises(InvalidSICCodeError) as exc_info:
+        sic = SIC("00000")
+        print(sic.code)
+
+    exception_raised = exc_info.value
+    assert str(exception_raised) == "SIC is supported from Section A (01000) through Section U."
 
 def test_class_repr():
     sic = SIC(58290)
@@ -39,7 +47,6 @@ def test_code_validity(example_input: int, expectation: Any):
 @pytest.mark.parametrize(
     "example_input, expectation",
     [
-        ("00000", Component.DIVISION),
         ("05000", Component.DIVISION),
         ("05100", Component.GROUP),
         ("08110", Component.CLASS),
