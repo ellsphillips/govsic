@@ -2,9 +2,9 @@ import string
 from dataclasses import dataclass
 from typing import Union
 
-from sic.constants import Component, SectionBoundaries
-from sic.data.glossary import SIC_GLOSSARY
-from sic.exceptions import InvalidSICCodeError
+from govsic.constants import Component, SectionBoundaries
+from govsic.data.glossary import SIC_GLOSSARY
+from govsic.exceptions import InvalidSICCodeError
 
 SICCode = Union[str, int]
 
