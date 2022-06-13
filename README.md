@@ -8,7 +8,7 @@ A lightweight library to parse and interface Standard Industrial Classification 
 
 ## Data
 
-Data used has been transfromed using the [Office for National Statistics](https://www.ons.gov.uk/methodology/classificationsandstandards/ukstandardindustrialclassificationofeconomicactivities/uksic2007)' published opensource SIC structure and volume datasets.
+Data used has been transformed using the [Office for National Statistics](https://www.ons.gov.uk/methodology/classificationsandstandards/ukstandardindustrialclassificationofeconomicactivities/uksic2007)' published opensource SIC structure and volume datasets.
 
 ## Installation
 
