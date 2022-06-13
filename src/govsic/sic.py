@@ -19,6 +19,11 @@ class SIC:
                 message="SIC codes should be at most 5 digits long."
             )
 
+        if int(self.code) < 1000:
+            raise InvalidSICCodeError(
+                message="SIC is supported from Section A (01000) through Section U."
+            )
+
         self.code = str(self.code).zfill(5)
 
     @property
