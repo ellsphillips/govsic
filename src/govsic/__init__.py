@@ -1,1 +1,1 @@
-from .standard_industrial_classification import SIC
+from govsic.sic import SIC
