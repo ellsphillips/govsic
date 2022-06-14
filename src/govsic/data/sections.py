@@ -1,10 +1,11 @@
 from dataclasses import dataclass
 from enum import Enum
+from typing import Tuple
 
 
 @dataclass
 class Section:
-    domain: tuple[int, int]
+    domain: Tuple[int, int]
     description: str
     long_description: str
 
