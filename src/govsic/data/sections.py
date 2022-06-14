@@ -10,6 +10,9 @@ class Section:
 
 @dataclass
 class Sections:
+    """
+    Lookup table for SIC Sections, complete with domains and descriptions.
+    """
     A = Section(
         domain = (1000, 4999),
         description = "Agriculture, forestry and fishing",
