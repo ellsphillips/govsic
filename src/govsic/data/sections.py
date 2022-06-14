@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from enum import Enum
 
 
 @dataclass
@@ -8,8 +9,7 @@ class Section:
     long_description: str
 
 
-@dataclass
-class Sections:
+class Sections(Enum):
     """
     Lookup table for SIC Sections, complete with domains and descriptions.
     """
