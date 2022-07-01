@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import string
 from dataclasses import dataclass
-from typing import Optional, Union
+from typing import Any, Dict, Optional, Union
 
 from govsic import parse
 from govsic.constants import Component, SectionBoundaries
@@ -74,6 +74,40 @@ class SIC:
         bucket = next(x[0] for x in enumerate(bounds) if x[1] > int(self.code))
         return string.ascii_uppercase[bucket - 1]
 
+    def summary(self) -> str:
+        section = Sections[self.section].value
+
+        if not self.is_valid:
+            raise ValueError
+
+        description = (
+            [section.long_description.strip()]
+            if self.component == "DIVISION"
+            else SIC_GLOSSARY[str(self.code)]
+        )
+
+        return " ".join([
+            f"{self!r} ::",
+            "\n".join([
+                section.description.upper(),
+                f"{[c.name for c in Component].index(self.component) + 1}-digit description:",
+                *set(description if description else ""),
+            ])
+        ])
+
+    def as_dict(self) -> Dict[str, Any]:
+        return {
+            "value": str(self.code),
+            "valid?": self.is_valid,
+            "section": self.section,
+            "component": self.component,
+            "description": (
+                [Sections[self.section].value.long_description.strip()]
+                if self.component == "DIVISION"
+                else SIC_GLOSSARY[str(self.code)]
+            )
+        }
+
     def __repr__(self) -> str:
         """
         String representation of the given code, using the UK SIC 2007 format
@@ -84,3 +118,9 @@ class SIC:
             f"[{self.section}] "
             f"{div}.{grp_cls}/{sub_cls}"
         )
+
+    def __str__(self) -> str:
+        """
+        String representation of the given code
+        """
+        return str(self.code)

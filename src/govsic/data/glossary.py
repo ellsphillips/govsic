@@ -213,10 +213,10 @@ SIC_GLOSSARY = {
         "Support activities for animal production"
     ],
     "01621": [
-        "L5_Farm animal boarding and care"
+        "Farm animal boarding and care"
     ],
     "01629": [
-        "L5_Support activities for animal production (other than farm animal boarding and care) n.e.c."
+        "Support activities for animal production (other than farm animal boarding and care) n.e.c."
     ],
     "01630": [
         "Post-harvest crop activities"
@@ -414,10 +414,10 @@ SIC_GLOSSARY = {
         "Mining of hard coal"
     ],
     "05101": [
-        "L5_Mining of hard coal from deep coal mines (underground mining)"
+        "Mining of hard coal from deep coal mines (underground mining)"
     ],
     "05102": [
-        "L5_Mining of hard coal from open cast coal working (surface mining)"
+        "Mining of hard coal from open cast coal working (surface mining)"
     ],
     "05200": [
         "Mining of lignite",
@@ -568,13 +568,13 @@ SIC_GLOSSARY = {
         "Operation of dairies and cheese making"
     ],
     "10511": [
-        "L5_Liquid milk and cream production"
+        "Liquid milk and cream production"
     ],
     "10512": [
-        "L5_Butter and cheese production"
+        "Butter and cheese production"
     ],
     "10519": [
-        "L5_Manufacture of milk products (other than liquid milk and cream, butter, cheese) n.e.c."
+        "Manufacture of milk products (other than liquid milk and cream, butter, cheese) n.e.c."
     ],
     "10520": [
         "Manufacture of ice cream"
@@ -586,10 +586,10 @@ SIC_GLOSSARY = {
         "Manufacture of grain mill products"
     ],
     "10611": [
-        "L5_Grain milling"
+        "Grain milling"
     ],
     "10612": [
-        "L5_Manufacture of breakfast cereals and cereals-based foods"
+        "Manufacture of breakfast cereals and cereals-based foods"
     ],
     "10620": [
         "Manufacture of starches and starch products"
@@ -616,19 +616,19 @@ SIC_GLOSSARY = {
         "Manufacture of cocoa, chocolate and sugar confectionery"
     ],
     "10821": [
-        "L5_Manufacture of cocoa, and chocolate confectionery"
+        "Manufacture of cocoa, and chocolate confectionery"
     ],
     "10822": [
-        "L5_Manufacture of sugar confectionery"
+        "Manufacture of sugar confectionery"
     ],
     "10830": [
         "Processing of tea and coffee"
     ],
     "10831": [
-        "L5_Tea processing"
+        "Tea processing"
     ],
     "10832": [
-        "L5_Production of coffee and coffee substitutes"
+        "Production of coffee and coffee substitutes"
     ],
     "10840": [
         "Manufacture of condiments and seasonings"
@@ -781,22 +781,22 @@ SIC_GLOSSARY = {
         "Manufacture of made-up textile articles, except apparel"
     ],
     "13921": [
-        "L5_Manufacture of soft furnishings"
+        "Manufacture of soft furnishings"
     ],
     "13922": [
-        "L5_Manufacture of canvas goods, sacks etc."
+        "Manufacture of canvas goods, sacks etc."
     ],
     "13923": [
-        "L5_Manufacture of household textiles (other than soft furnishings of 13.92/1)"
+        "Manufacture of household textiles (other than soft furnishings of 13.92/1)"
     ],
     "13930": [
         "Manufacture of carpets and rugs"
     ],
     "13931": [
-        "L5_Manufacture of woven or tufted carpets and rugs"
+        "Manufacture of woven or tufted carpets and rugs"
     ],
     "13939": [
-        "L5_Manufacture of carpets and rugs (other than woven or tufted) n.e.c."
+        "Manufacture of carpets and rugs (other than woven or tufted) n.e.c."
     ],
     "13940": [
         "Manufacture of cordage, rope, twine and netting"
@@ -826,19 +826,19 @@ SIC_GLOSSARY = {
         "Manufacture of other outerwear"
     ],
     "14131": [
-        "L5_Manufacture of men's outerwear, other than leather clothes and workwear"
+        "Manufacture of men's outerwear, other than leather clothes and workwear"
     ],
     "14132": [
-        "L5_Manufacture of women's outerwear, other than leather clothes and workwear"
+        "Manufacture of women's outerwear, other than leather clothes and workwear"
     ],
     "14140": [
         "Manufacture of underwear"
     ],
     "14141": [
-        "L5_Manufacture of men's underwear"
+        "Manufacture of men's underwear"
     ],
     "14142": [
-        "L5_Manufacture of women's underwear"
+        "Manufacture of women's underwear"
     ],
     "14190": [
         "Manufacture of other wearing apparel and accessories"
@@ -1949,10 +1949,10 @@ SIC_GLOSSARY = {
         "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard"
     ],
     "17211": [
-        "L5_Manufacture of corrugated paper and paperboard; manufacture of sacks and bags of paper"
+        "Manufacture of corrugated paper and paperboard; manufacture of sacks and bags of paper"
     ],
     "17219": [
-        "L5_Manufacture of paper and paperboard containers other than sacks and bags"
+        "Manufacture of paper and paperboard containers other than sacks and bags"
     ],
     "17220": [
         "Manufacture of household and sanitary goods and of toilet requisites"
@@ -2547,10 +2547,10 @@ SIC_GLOSSARY = {
         "Other printing"
     ],
     "18121": [
-        "L5_Manufacture of printed labels"
+        "Manufacture of printed labels"
     ],
     "18129": [
-        "L5_Printing (other than printing of newspapers and printing on labels and tags) n.e.c."
+        "Printing (other than printing of newspapers and printing on labels and tags) n.e.c."
     ],
     "18130": [
         "Pre-press and pre-media services"
@@ -2563,13 +2563,13 @@ SIC_GLOSSARY = {
         "Reproduction of recorded media"
     ],
     "18201": [
-        "L5_Reproduction of sound recording"
+        "Reproduction of sound recording"
     ],
     "18202": [
-        "L5_Reproduction of video recording"
+        "Reproduction of video recording"
     ],
     "18203": [
-        "L5_Reproduction of computer media"
+        "Reproduction of computer media"
     ],
     "18210": [
         "Aprons for domestic use (manufacture)",
@@ -2887,10 +2887,10 @@ SIC_GLOSSARY = {
         "Manufacture of refined petroleum products"
     ],
     "19201": [
-        "L5_Mineral oil refining"
+        "Mineral oil refining"
     ],
     "19209": [
-        "L5_Other treatment of petroleum products (excluding mineral oil refining/petrochemicals manufacture)"
+        "Other treatment of petroleum products (excluding mineral oil refining/petrochemicals manufacture)"
     ],
     "19300": [
         "Athletic footwear (manufacture)",
@@ -2967,10 +2967,10 @@ SIC_GLOSSARY = {
         "Manufacture of paints, varnishes and similar coatings, printing ink and mastics"
     ],
     "20301": [
-        "L5_Manufacture of paints, varnishes and similar coatings, mastics and sealants"
+        "Manufacture of paints, varnishes and similar coatings, mastics and sealants"
     ],
     "20302": [
-        "L5_Manufacture of printing ink"
+        "Manufacture of printing ink"
     ],
     "20400": [
         "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations"
@@ -2979,10 +2979,10 @@ SIC_GLOSSARY = {
         "Manufacture of soap and detergents, cleaning and polishing preparations"
     ],
     "20411": [
-        "L5_Manufacture of soap and detergents"
+        "Manufacture of soap and detergents"
     ],
     "20412": [
-        "L5_Manufacture of cleaning and polishing preparations"
+        "Manufacture of cleaning and polishing preparations"
     ],
     "20420": [
         "Manufacture of perfumes and toilet preparations"
@@ -4992,10 +4992,10 @@ SIC_GLOSSARY = {
         "Manufacture of communication equipment"
     ],
     "26301": [
-        "L5_Manufacture of telegraph and telephone apparatus and equipment"
+        "Manufacture of telegraph and telephone apparatus and equipment"
     ],
     "26309": [
-        "L5_Manufacture of communication equipment (other than telegraph and telephone apparatus and equipment)"
+        "Manufacture of communication equipment (other than telegraph and telephone apparatus and equipment)"
     ],
     "26400": [
         "Manufacture of consumer electronics",
@@ -5008,16 +5008,16 @@ SIC_GLOSSARY = {
         "Manufacture of instruments and appliances for measuring, testing and navigation"
     ],
     "26511": [
-        "L5_Manufacture of electronic instruments and appliances for measuring, testing, and navigation, except industrial process control equipment"
+        "Manufacture of electronic instruments and appliances for measuring, testing, and navigation, except industrial process control equipment"
     ],
     "26512": [
-        "L5_Manufacture of electronic industrial process control equipment"
+        "Manufacture of electronic industrial process control equipment"
     ],
     "26513": [
-        "L5_Manufacture of non-electronic instruments and appliances for measuring, testing and navigation, except industrial process control equipment"
+        "Manufacture of non-electronic instruments and appliances for measuring, testing and navigation, except industrial process control equipment"
     ],
     "26514": [
-        "L5_Manufacture of non-electronic industrial process control equipment"
+        "Manufacture of non-electronic industrial process control equipment"
     ],
     "26520": [
         "Manufacture of watches and clocks"
@@ -5131,10 +5131,10 @@ SIC_GLOSSARY = {
         "Manufacture of optical instruments and photographic equipment"
     ],
     "26701": [
-        "L5_Manufacture of optical precision instruments"
+        "Manufacture of optical precision instruments"
     ],
     "26702": [
-        "L5_Manufacture of photographic and cinematographic equipment"
+        "Manufacture of photographic and cinematographic equipment"
     ],
     "26800": [
         "Manufacture of magnetic and optical media",
@@ -5588,10 +5588,10 @@ SIC_GLOSSARY = {
         "Manufacture of other pumps and compressors"
     ],
     "28131": [
-        "L5_Manufacture of pumps"
+        "Manufacture of pumps"
     ],
     "28132": [
-        "L5_Manufacture of compressors"
+        "Manufacture of compressors"
     ],
     "28140": [
         "Manufacture of other taps and valves"
@@ -5625,10 +5625,10 @@ SIC_GLOSSARY = {
         "Manufacture of agricultural and forestry machinery"
     ],
     "28301": [
-        "L5_Manufacture of agricultural tractors"
+        "Manufacture of agricultural tractors"
     ],
     "28302": [
-        "L5_Manufacture of agricultural and forestry machinery (other than agricultural tractors)"
+        "Manufacture of agricultural and forestry machinery (other than agricultural tractors)"
     ],
     "28400": [
         "Manufacture of metal forming machinery and machine tools"
@@ -6109,13 +6109,13 @@ SIC_GLOSSARY = {
         "Manufacture of machinery for mining, quarrying and construction"
     ],
     "28921": [
-        "L5_Manufacture of machinery for mining"
+        "Manufacture of machinery for mining"
     ],
     "28922": [
-        "L5_Manufacture of earthmoving equipment"
+        "Manufacture of earthmoving equipment"
     ],
     "28923": [
-        "L5_Manufacture of equipment for concrete crushing and screening roadworks"
+        "Manufacture of equipment for concrete crushing and screening roadworks"
     ],
     "28930": [
         "Manufacture of machinery for food, beverage and tobacco processing"
@@ -6402,13 +6402,13 @@ SIC_GLOSSARY = {
         "Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers"
     ],
     "29201": [
-        "L5_Manufacture of bodies (coachwork) for motor vehicles (except caravans)"
+        "Manufacture of bodies (coachwork) for motor vehicles (except caravans)"
     ],
     "29202": [
-        "L5_Manufacture of trailers and semi-trailers"
+        "Manufacture of trailers and semi-trailers"
     ],
     "29203": [
-        "L5_Manufacture of caravans"
+        "Manufacture of caravans"
     ],
     "29210": [
         "Annealing lehr (manufacture)",
@@ -8131,10 +8131,10 @@ SIC_GLOSSARY = {
         "Manufacture of games and toys"
     ],
     "32401": [
-        "L5_Manufacture of professional and arcade games and toys"
+        "Manufacture of professional and arcade games and toys"
     ],
     "32409": [
-        "L5_Manufacture of games and toys (other than professional and arcade games and toys) n.e.c."
+        "Manufacture of games and toys (other than professional and arcade games and toys) n.e.c."
     ],
     "32500": [
         "Manufacture of medical and dental instruments and supplies",
@@ -9688,10 +9688,10 @@ SIC_GLOSSARY = {
         "Construction of residential and non-residential buildings"
     ],
     "41201": [
-        "L5_Construction of commercial buildings"
+        "Construction of commercial buildings"
     ],
     "41202": [
-        "L5_Construction of domestic buildings"
+        "Construction of domestic buildings"
     ],
     "42000": [
         "Civil engineering"
@@ -9769,10 +9769,10 @@ SIC_GLOSSARY = {
         "Painting and glazing"
     ],
     "43341": [
-        "L5_Painting"
+        "Painting"
     ],
     "43342": [
-        "L5_Glazing"
+        "Glazing"
     ],
     "43390": [
         "Other building completion and finishing"
@@ -9787,10 +9787,10 @@ SIC_GLOSSARY = {
         "Other specialised construction activities n.e.c."
     ],
     "43991": [
-        "L5_Scaffold erection"
+        "Scaffold erection"
     ],
     "43999": [
-        "L5_Specialised construction activities (other than scaffold erection) n.e.c."
+        "Specialised construction activities (other than scaffold erection) n.e.c."
     ],
     "45000": [
         "WHOLESALE AND RETAIL TRADE; REPAIR OF MOTOR VEHICLES AND MOTORCYCLES",
@@ -9803,10 +9803,10 @@ SIC_GLOSSARY = {
         "Sale of cars and light motor vehicles"
     ],
     "45111": [
-        "L5_Sale of new cars and light motor vehicles"
+        "Sale of new cars and light motor vehicles"
     ],
     "45112": [
-        "L5_Sale of used cars and light motor vehicles"
+        "Sale of used cars and light motor vehicles"
     ],
     "45120": [
         "Borehole drilling",
@@ -10255,10 +10255,10 @@ SIC_GLOSSARY = {
         "Wholesale of beverages"
     ],
     "46341": [
-        "L5_Wholesale of fruit and vegetable juices, mineral waters and soft drinks"
+        "Wholesale of fruit and vegetable juices, mineral waters and soft drinks"
     ],
     "46342": [
-        "L5_Wholesale of wine, beer, spirits and other alcoholic beverages"
+        "Wholesale of wine, beer, spirits and other alcoholic beverages"
     ],
     "46350": [
         "Wholesale of tobacco products"
@@ -10288,10 +10288,10 @@ SIC_GLOSSARY = {
         "Wholesale of electrical household appliances"
     ],
     "46431": [
-        "L5_Wholesale of gramophone records, audio tapes, compact discs and video tapes and of the equipment on which these are played"
+        "Wholesale of gramophone records, audio tapes, compact discs and video tapes and of the equipment on which these are played"
     ],
     "46439": [
-        "L5_Wholesale of radio and television goods and of electrical household appliances (other than of gramophone records, audio tapes, compact discs and video tapes and the equipment on which these are played) n.e.c."
+        "Wholesale of radio and television goods and of electrical household appliances (other than of gramophone records, audio tapes, compact discs and video tapes and the equipment on which these are played) n.e.c."
     ],
     "46440": [
         "Wholesale of china and glassware and cleaning materials"
@@ -10312,10 +10312,10 @@ SIC_GLOSSARY = {
         "Wholesale of other household goods"
     ],
     "46491": [
-        "L5_Wholesale of musical instruments"
+        "Wholesale of musical instruments"
     ],
     "46499": [
-        "L5_Wholesale of household goods (other than musical instruments) n.e.c."
+        "Wholesale of household goods (other than musical instruments) n.e.c."
     ],
     "46500": [
         "Wholesale of information and communication equipment"
@@ -10357,10 +10357,10 @@ SIC_GLOSSARY = {
         "Wholesale of solid, liquid and gaseous fuels and related products"
     ],
     "46711": [
-        "L5_Wholesale of petroleum and petroleum products"
+        "Wholesale of petroleum and petroleum products"
     ],
     "46719": [
-        "L5_Wholesale of fuels and related products (other than petroleum and petroleum products)"
+        "Wholesale of fuels and related products (other than petroleum and petroleum products)"
     ],
     "46720": [
         "Wholesale of metals and metal ores"
@@ -10434,10 +10434,10 @@ SIC_GLOSSARY = {
         "Retail sale of telecommunications equipment in specialised stores"
     ],
     "47421": [
-        "L5_Retail sale of mobile telephones in specialised stores"
+        "Retail sale of mobile telephones in specialised stores"
     ],
     "47429": [
-        "L5_Retail sale of telecommunications equipment (other than mobile telephones) n.e.c., in specialised stores"
+        "Retail sale of telecommunications equipment (other than mobile telephones) n.e.c., in specialised stores"
     ],
     "47430": [
         "Retail sale of audio and video equipment in specialised stores"
@@ -10461,10 +10461,10 @@ SIC_GLOSSARY = {
         "Retail sale of furniture, lighting equipment and other household articles in specialised stores"
     ],
     "47591": [
-        "L5_Retail sale of musical instruments and scores in specialised stores"
+        "Retail sale of musical instruments and scores in specialised stores"
     ],
     "47599": [
-        "L5_Retail sale of furniture, lighting equipment and other household articles (other than musical instruments) n.e.c., in specialised stores"
+        "Retail sale of furniture, lighting equipment and other household articles (other than musical instruments) n.e.c., in specialised stores"
     ],
     "47600": [
         "Retail sale of cultural and recreation goods in specialised stores"
@@ -10494,10 +10494,10 @@ SIC_GLOSSARY = {
         "Retail sale of footwear and leather goods in specialised stores"
     ],
     "47721": [
-        "L5_Retail sale of footwear in specialised stores"
+        "Retail sale of footwear in specialised stores"
     ],
     "47722": [
-        "L5_Retail sale of leather goods in specialised stores"
+        "Retail sale of leather goods in specialised stores"
     ],
     "47730": [
         "Dispensing chemist in specialised stores"
@@ -10506,10 +10506,10 @@ SIC_GLOSSARY = {
         "Retail sale of medical and orthopaedic goods in specialised stores"
     ],
     "47741": [
-        "L5_Retail sale of hearing aids in specialised stores"
+        "Retail sale of hearing aids in specialised stores"
     ],
     "47749": [
-        "L5_Retail sale of medical and orthopaedic goods (other than hearing aids) n.e.c., in specialised stores"
+        "Retail sale of medical and orthopaedic goods (other than hearing aids) n.e.c., in specialised stores"
     ],
     "47750": [
         "Retail sale of cosmetic and toilet articles in specialised stores"
@@ -10524,22 +10524,22 @@ SIC_GLOSSARY = {
         "Other retail sale of new goods in specialised stores"
     ],
     "47781": [
-        "L5_Retail sale in commercial art galleries"
+        "Retail sale in commercial art galleries"
     ],
     "47782": [
-        "L5_Retail sale by opticians"
+        "Retail sale by opticians"
     ],
     "47789": [
-        "L5_Other retail sale of new goods in specialised stores (other than by opticians or commercial art galleries), n.e.c"
+        "Other retail sale of new goods in specialised stores (other than by opticians or commercial art galleries), n.e.c"
     ],
     "47790": [
         "Retail sale of second-hand goods in stores"
     ],
     "47791": [
-        "L5_Retail sale of antiques including antique books, in stores"
+        "Retail sale of antiques including antique books, in stores"
     ],
     "47799": [
-        "L5_Retail sale of second-hand goods (other than antiques and antique books) in stores"
+        "Retail sale of second-hand goods (other than antiques and antique books) in stores"
     ],
     "47800": [
         "Retail sale via stalls and markets"
@@ -10581,10 +10581,10 @@ SIC_GLOSSARY = {
         "Urban and suburban passenger land transport"
     ],
     "49311": [
-        "L5_Urban, suburban or metropolitan area passenger railway transportation by underground, metro and similar systems"
+        "Urban, suburban or metropolitan area passenger railway transportation by underground, metro and similar systems"
     ],
     "49319": [
-        "L5_Urban, suburban or metropolitan area passenger land transport other than railway transportation by underground, metro and similar systems"
+        "Urban, suburban or metropolitan area passenger land transport other than railway transportation by underground, metro and similar systems"
     ],
     "49320": [
         "Taxi operation"
@@ -10700,10 +10700,10 @@ SIC_GLOSSARY = {
         "Passenger air transport"
     ],
     "51101": [
-        "L5_Scheduled passenger air transport"
+        "Scheduled passenger air transport"
     ],
     "51102": [
-        "L5_Non-scheduled passenger air transport"
+        "Non-scheduled passenger air transport"
     ],
     "51110": [
         "Agricultural raw materials (commission agent)",
@@ -12251,13 +12251,13 @@ SIC_GLOSSARY = {
         "Warehousing and storage"
     ],
     "52101": [
-        "L5_Operation of warehousing and storage facilities for water transport activities of division 50"
+        "Operation of warehousing and storage facilities for water transport activities of division 50"
     ],
     "52102": [
-        "L5_Operation of warehousing and storage facilities for air transport activities of division 51"
+        "Operation of warehousing and storage facilities for air transport activities of division 51"
     ],
     "52103": [
-        "L5_Operation of warehousing and storage facilities for land transport activities of division 49"
+        "Operation of warehousing and storage facilities for land transport activities of division 49"
     ],
     "52111": [
         "Confectioners, tobacconists and newsagents (CTN's) (retail)"
@@ -12296,16 +12296,16 @@ SIC_GLOSSARY = {
         "Service activities incidental to land transportation"
     ],
     "52211": [
-        "L5_Operation of rail freight terminals"
+        "Operation of rail freight terminals"
     ],
     "52212": [
-        "L5_Operation of rail passenger facilities at railway stations"
+        "Operation of rail passenger facilities at railway stations"
     ],
     "52213": [
-        "L5_Operation of bus and coach passenger facilities at bus and coach stations"
+        "Operation of bus and coach passenger facilities at bus and coach stations"
     ],
     "52219": [
-        "L5_Other service activities incidental to land transportation, n.e.c. (not including operation of rail freight terminals, passenger facilities at railway stations or passenger facilities at bus and coach stations)"
+        "Other service activities incidental to land transportation, n.e.c. (not including operation of rail freight terminals, passenger facilities at railway stations or passenger facilities at bus and coach stations)"
     ],
     "52220": [
         "Service activities incidental to water transportation"
@@ -12317,13 +12317,13 @@ SIC_GLOSSARY = {
         "Cargo handling"
     ],
     "52241": [
-        "L5_Cargo handling for water transport activities of division 50"
+        "Cargo handling for water transport activities of division 50"
     ],
     "52242": [
-        "L5_Cargo handling for air transport activities of division 51"
+        "Cargo handling for air transport activities of division 51"
     ],
     "52243": [
-        "L5_Cargo handling for land transport activities of division 49"
+        "Cargo handling for land transport activities of division 49"
     ],
     "52250": [
         "Alcoholic beverages (retail)",
@@ -12893,10 +12893,10 @@ SIC_GLOSSARY = {
         "Other postal and courier activities"
     ],
     "53201": [
-        "L5_Licensed Carriers"
+        "Licensed Carriers"
     ],
     "53202": [
-        "L5_Unlicensed Carriers"
+        "Unlicensed Carriers"
     ],
     "55000": [
         "ACCOMMODATION AND FOOD SERVICE ACTIVITIES",
@@ -12923,13 +12923,13 @@ SIC_GLOSSARY = {
         "Holiday and other short-stay accommodation"
     ],
     "55201": [
-        "L5_Holiday centres and villages"
+        "Holiday centres and villages"
     ],
     "55202": [
-        "L5_Youth hostels"
+        "Youth hostels"
     ],
     "55209": [
-        "L5_Other holiday and other short-stay accommodation (not including holiday centres and villages or youth hostels) n.e.c."
+        "Other holiday and other short-stay accommodation (not including holiday centres and villages or youth hostels) n.e.c."
     ],
     "55210": [
         "Mountain refuges",
@@ -13112,13 +13112,13 @@ SIC_GLOSSARY = {
         "Restaurants and mobile food service activities"
     ],
     "56101": [
-        "L5_Licensed restaurants"
+        "Licensed restaurants"
     ],
     "56102": [
-        "L5_Unlicensed restaurants and cafes"
+        "Unlicensed restaurants and cafes"
     ],
     "56103": [
-        "L5_Take away food shops and mobile food stands"
+        "Take away food shops and mobile food stands"
     ],
     "56200": [
         "Event catering and other food service activities"
@@ -13134,10 +13134,10 @@ SIC_GLOSSARY = {
         "Beverage serving activities"
     ],
     "56301": [
-        "L5_Licensed clubs"
+        "Licensed clubs"
     ],
     "56302": [
-        "L5_Public houses and bars"
+        "Public houses and bars"
     ],
     "58000": [
         "INFORMATION AND COMMUNICATION",
@@ -13159,10 +13159,10 @@ SIC_GLOSSARY = {
         "Publishing of journals and periodicals"
     ],
     "58141": [
-        "L5_Publishing of learned journals"
+        "Publishing of learned journals"
     ],
     "58142": [
-        "L5_Publishing of consumer, business and professional journals and periodicals"
+        "Publishing of consumer, business and professional journals and periodicals"
     ],
     "58190": [
         "Other publishing activities"
@@ -13186,13 +13186,13 @@ SIC_GLOSSARY = {
         "Motion picture, video and television programme production activities"
     ],
     "59111": [
-        "L5_Motion picture production activities"
+        "Motion picture production activities"
     ],
     "59112": [
-        "L5_Video production activities"
+        "Video production activities"
     ],
     "59113": [
-        "L5_Television programme production activities"
+        "Television programme production activities"
     ],
     "59120": [
         "Motion picture, video and television programme post-production activities"
@@ -13201,13 +13201,13 @@ SIC_GLOSSARY = {
         "Motion picture, video and television programme distribution activities"
     ],
     "59131": [
-        "L5_Motion picture distribution activities"
+        "Motion picture distribution activities"
     ],
     "59132": [
-        "L5_Video distribution activities"
+        "Video distribution activities"
     ],
     "59133": [
-        "L5_Television programme distribution activities"
+        "Television programme distribution activities"
     ],
     "59140": [
         "Motion picture projection activities"
@@ -13462,10 +13462,10 @@ SIC_GLOSSARY = {
         "Computer programming activities"
     ],
     "62011": [
-        "L5_Ready-made interactive leisure and entertainment software development"
+        "Ready-made interactive leisure and entertainment software development"
     ],
     "62012": [
-        "L5_Business and domestic software development"
+        "Business and domestic software development"
     ],
     "62020": [
         "Computer consultancy activities"
@@ -13779,54 +13779,54 @@ SIC_GLOSSARY = {
         "Other monetary intermediation"
     ],
     "64191": [
-        "L5_Banks"
+        "Banks"
     ],
     "64192": [
-        "L5_Building societies"
+        "Building societies"
     ],
     "64200": [
         "Activities of holding companies",
         "Activities of holding companies"
     ],
     "64201": [
-        "L5_Activities of agricultural holding companies"
+        "Activities of agricultural holding companies"
     ],
     "64202": [
-        "L5_Activities of production holding companies"
+        "Activities of production holding companies"
     ],
     "64203": [
-        "L5_Activities of construction holding companies"
+        "Activities of construction holding companies"
     ],
     "64204": [
-        "L5_Activities of distribution holding companies"
+        "Activities of distribution holding companies"
     ],
     "64205": [
-        "L5_Activities of financial services holding companies"
+        "Activities of financial services holding companies"
     ],
     "64209": [
-        "L5_Activities of other holding companies (not including agricultural, production, construction, distribution and financial services holding companies) n.e.c."
+        "Activities of other holding companies (not including agricultural, production, construction, distribution and financial services holding companies) n.e.c."
     ],
     "64300": [
         "Trusts, funds and similar financial entities",
         "Trusts, funds and similar financial entities"
     ],
     "64301": [
-        "L5_Activities of investment trusts"
+        "Activities of investment trusts"
     ],
     "64302": [
-        "L5_Activities of unit trusts"
+        "Activities of unit trusts"
     ],
     "64303": [
-        "L5_Activities of venture and development capital companies"
+        "Activities of venture and development capital companies"
     ],
     "64304": [
-        "L5_Activities of open-ended investment companies"
+        "Activities of open-ended investment companies"
     ],
     "64305": [
-        "L5_Activities of property unit trusts"
+        "Activities of property unit trusts"
     ],
     "64306": [
-        "L5_Activities of real estate investment trusts"
+        "Activities of real estate investment trusts"
     ],
     "64900": [
         "Other financial service activities, except insurance and pension funding"
@@ -13838,25 +13838,25 @@ SIC_GLOSSARY = {
         "Other credit granting"
     ],
     "64921": [
-        "L5_Credit granting by non-deposit taking finance houses and other specialist consumer credit grantors"
+        "Credit granting by non-deposit taking finance houses and other specialist consumer credit grantors"
     ],
     "64922": [
-        "L5_Activities of mortgage finance companies"
+        "Activities of mortgage finance companies"
     ],
     "64929": [
-        "L5_Other credit granting (not including credit granting by non-deposit taking finance houses and other specialist consumer credit grantors and activities of mortgage finance companies) n.e.c."
+        "Other credit granting (not including credit granting by non-deposit taking finance houses and other specialist consumer credit grantors and activities of mortgage finance companies) n.e.c."
     ],
     "64990": [
         "Other financial service activities, except insurance and pension funding, n.e.c."
     ],
     "64991": [
-        "L5_Security dealing on own account"
+        "Security dealing on own account"
     ],
     "64992": [
-        "L5_Factoring"
+        "Factoring"
     ],
     "64999": [
-        "L5_Other financial service activities, except insurance and pension funding, (not including security dealing on own account and factoring) n.e.c."
+        "Other financial service activities, except insurance and pension funding, (not including security dealing on own account and factoring) n.e.c."
     ],
     "65000": [
         "Insurance, reinsurance and pension funding, except compulsory social security"
@@ -13887,10 +13887,10 @@ SIC_GLOSSARY = {
         "Reinsurance"
     ],
     "65201": [
-        "L5_Life reinsurance"
+        "Life reinsurance"
     ],
     "65202": [
-        "L5_Non-life reinsurance"
+        "Non-life reinsurance"
     ],
     "65210": [
         "Financial leasing"
@@ -14148,13 +14148,13 @@ SIC_GLOSSARY = {
         "Renting and operating of own or leased real estate"
     ],
     "68201": [
-        "L5_Renting and operating of Housing Association real estate"
+        "Renting and operating of Housing Association real estate"
     ],
     "68202": [
-        "L5_Letting and operating of conference and exhibition centres"
+        "Letting and operating of conference and exhibition centres"
     ],
     "68209": [
-        "L5_Letting and operating of own or leased real estate (other than Housing Association real estate and conference and exhibition services) n.e.c."
+        "Letting and operating of own or leased real estate (other than Housing Association real estate and conference and exhibition services) n.e.c."
     ],
     "68300": [
         "Real estate activities on a fee or contract basis"
@@ -14174,26 +14174,26 @@ SIC_GLOSSARY = {
         "Legal activities"
     ],
     "69101": [
-        "L5_Barristers at law"
+        "Barristers at law"
     ],
     "69102": [
-        "L5_Solicitors"
+        "Solicitors"
     ],
     "69109": [
-        "L5_Activities of patent and copyright agents; other legal activities (other than those of barristers and solicitors) n.e.c."
+        "Activities of patent and copyright agents; other legal activities (other than those of barristers and solicitors) n.e.c."
     ],
     "69200": [
         "Accounting, bookkeeping and auditing activities; tax consultancy",
         "Accounting, bookkeeping and auditing activities; tax consultancy"
     ],
     "69201": [
-        "L5_Accounting, and auditing activities"
+        "Accounting, and auditing activities"
     ],
     "69202": [
-        "L5_Bookkeeping activities"
+        "Bookkeeping activities"
     ],
     "69203": [
-        "L5_Tax consultancy"
+        "Tax consultancy"
     ],
     "70000": [
         "Activities of head offices; management consultancy activities"
@@ -14270,10 +14270,10 @@ SIC_GLOSSARY = {
         "Business and other management consultancy activities"
     ],
     "70221": [
-        "L5_Financial management"
+        "Financial management"
     ],
     "70229": [
-        "L5_Management consultancy activities (other than financial management)"
+        "Management consultancy activities (other than financial management)"
     ],
     "70310": [
         "Advisory services in connection with buying, selling and renting of real estate ",
@@ -14311,22 +14311,22 @@ SIC_GLOSSARY = {
         "Architectural activities"
     ],
     "71111": [
-        "L5_Architectural activities"
+        "Architectural activities"
     ],
     "71112": [
-        "L5_Urban planning and landscape architectural activities"
+        "Urban planning and landscape architectural activities"
     ],
     "71120": [
         "Engineering activities and related technical consultancy"
     ],
     "71121": [
-        "L5_Engineering design activities for industrial process and production"
+        "Engineering design activities for industrial process and production"
     ],
     "71122": [
-        "L5_Engineering related scientific and technical consulting activities"
+        "Engineering related scientific and technical consulting activities"
     ],
     "71129": [
-        "L5_Other engineering activities (not including engineering design for industrial process and production or engineering related scientific and technical consulting activities)"
+        "Other engineering activities (not including engineering design for industrial process and production or engineering related scientific and technical consulting activities)"
     ],
     "71200": [
         "Technical testing and analysis",
@@ -14830,13 +14830,13 @@ SIC_GLOSSARY = {
         "Photographic activities"
     ],
     "74201": [
-        "L5_Portrait photographic activities"
+        "Portrait photographic activities"
     ],
     "74202": [
-        "L5_Other specialist photography (not including portrait photography)"
+        "Other specialist photography (not including portrait photography)"
     ],
     "74203": [
-        "L5_Film processing"
+        "Film processing"
     ],
     "74204": [
         "Acoustical engineering design",
@@ -14928,7 +14928,7 @@ SIC_GLOSSARY = {
         "Weather forecasting activities"
     ],
     "74209": [
-        "L5_Other photographic activities (not including portrait and other specialist photography and film processing) n.e.c."
+        "Other photographic activities (not including portrait and other specialist photography and film processing) n.e.c."
     ],
     "74300": [
         "Translation and interpretation activities",
@@ -15277,13 +15277,13 @@ SIC_GLOSSARY = {
         "Other professional, scientific and technical activities n.e.c."
     ],
     "74901": [
-        "L5_Environmental consulting activities"
+        "Environmental consulting activities"
     ],
     "74902": [
-        "L5_Quantity surveying activities"
+        "Quantity surveying activities"
     ],
     "74909": [
-        "L5_Other professional, scientific and technical activities (not including environmental consultancy or quantity surveying) n.e.c."
+        "Other professional, scientific and technical activities (not including environmental consultancy or quantity surveying) n.e.c."
     ],
     "75000": [
         "Veterinary activities",
@@ -15506,10 +15506,10 @@ SIC_GLOSSARY = {
         "Renting and leasing of other personal and household goods"
     ],
     "77291": [
-        "L5_Renting and leasing of media entertainment equipment"
+        "Renting and leasing of media entertainment equipment"
     ],
     "77299": [
-        "L5_Renting and leasing of other personal and household goods (other than media entertainment equipment)"
+        "Renting and leasing of other personal and household goods (other than media entertainment equipment)"
     ],
     "77300": [
         "Renting and leasing of other machinery, equipment and tangible goods"
@@ -15527,19 +15527,19 @@ SIC_GLOSSARY = {
         "Renting and leasing of water transport equipment"
     ],
     "77341": [
-        "L5_Renting and leasing of passenger water transport equipment"
+        "Renting and leasing of passenger water transport equipment"
     ],
     "77342": [
-        "L5_Renting and leasing of freight water transport equipment"
+        "Renting and leasing of freight water transport equipment"
     ],
     "77350": [
         "Renting and leasing of air transport equipment"
     ],
     "77351": [
-        "L5_Renting and leasing of passenger air transport equipment"
+        "Renting and leasing of passenger air transport equipment"
     ],
     "77352": [
-        "L5_Renting and leasing of freight air transport equipment"
+        "Renting and leasing of freight air transport equipment"
     ],
     "77390": [
         "Renting and leasing of other machinery, equipment and tangible goods n.e.c."
@@ -15556,10 +15556,10 @@ SIC_GLOSSARY = {
         "Activities of employment placement agencies"
     ],
     "78101": [
-        "L5_Motion picture, television and other theatrical casting"
+        "Motion picture, television and other theatrical casting"
     ],
     "78109": [
-        "L5_Activities of employment placement agencies (other than motion picture, television and other theatrical casting) n.e.c."
+        "Activities of employment placement agencies (other than motion picture, television and other theatrical casting) n.e.c."
     ],
     "78200": [
         "Temporary employment agency activities",
@@ -15586,10 +15586,10 @@ SIC_GLOSSARY = {
         "Other reservation service and related activities"
     ],
     "79901": [
-        "L5_Activities of tourist guides"
+        "Activities of tourist guides"
     ],
     "79909": [
-        "L5_Other reservation service activities (not including activities of tourist guides)"
+        "Other reservation service activities (not including activities of tourist guides)"
     ],
     "80000": [
         "Security and investigation activities"
@@ -15745,25 +15745,25 @@ SIC_GLOSSARY = {
         "Other building and industrial cleaning activities"
     ],
     "81221": [
-        "L5_Window cleaning services"
+        "Window cleaning services"
     ],
     "81222": [
-        "L5_Specialised cleaning services"
+        "Specialised cleaning services"
     ],
     "81223": [
-        "L5_Furnace and chimney cleaning services"
+        "Furnace and chimney cleaning services"
     ],
     "81229": [
-        "L5_Building and industrial cleaning activities (other than window cleaning, specialised cleaning and furnace and chimney cleaning services) n.e.c."
+        "Building and industrial cleaning activities (other than window cleaning, specialised cleaning and furnace and chimney cleaning services) n.e.c."
     ],
     "81290": [
         "Other cleaning activities"
     ],
     "81291": [
-        "L5_Disinfecting and extermination services"
+        "Disinfecting and extermination services"
     ],
     "81299": [
-        "L5_Cleaning services (other than disinfecting and extermination services) n.e.c."
+        "Cleaning services (other than disinfecting and extermination services) n.e.c."
     ],
     "81300": [
         "Landscape service activities",
@@ -15790,10 +15790,10 @@ SIC_GLOSSARY = {
         "Organisation of conventions and trade shows"
     ],
     "82301": [
-        "L5_Activities of exhibition and fair organizers"
+        "Activities of exhibition and fair organizers"
     ],
     "82302": [
-        "L5_Activities of conference organizers"
+        "Activities of conference organizers"
     ],
     "82900": [
         "Business support service activities n.e.c."
@@ -15802,10 +15802,10 @@ SIC_GLOSSARY = {
         "Activities of collection agencies and credit bureaus"
     ],
     "82911": [
-        "L5_Activities of collection agencies"
+        "Activities of collection agencies"
     ],
     "82912": [
-        "L5_Activities of credit bureaus"
+        "Activities of credit bureaus"
     ],
     "82920": [
         "Packaging activities"
@@ -16240,10 +16240,10 @@ SIC_GLOSSARY = {
         "Tertiary education"
     ],
     "85421": [
-        "L5_First-degree level higher education"
+        "First-degree level higher education"
     ],
     "85422": [
-        "L5_Post-graduate level higher education"
+        "Post-graduate level higher education"
     ],
     "85500": [
         "Other education"
@@ -16273,10 +16273,10 @@ SIC_GLOSSARY = {
         "Hospital activities"
     ],
     "86101": [
-        "L5_Hospital activities"
+        "Hospital activities"
     ],
     "86102": [
-        "L5_Medical nursing home activities"
+        "Medical nursing home activities"
     ],
     "86200": [
         "Medical and dental practice activities"
@@ -16354,10 +16354,10 @@ SIC_GLOSSARY = {
         "Library and archive activities"
     ],
     "91011": [
-        "L5_Library activities"
+        "Library activities"
     ],
     "91012": [
-        "L5_Archive activities"
+        "Archive activities"
     ],
     "91020": [
         "Museum activities"
@@ -17200,10 +17200,10 @@ SIC_GLOSSARY = {
         "Other sports activities"
     ],
     "93191": [
-        "L5_Activities of racehorse owners"
+        "Activities of racehorse owners"
     ],
     "93199": [
-        "L5_Other sports activities (not including activities of racehorse owners) n.e.c."
+        "Other sports activities (not including activities of racehorse owners) n.e.c."
     ],
     "93200": [
         "Amusement and recreation activities"
