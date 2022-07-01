@@ -17,15 +17,23 @@ def test_invalid_length():
         print(sic.code)
 
     exception_raised = exc_info.value
-    assert str(exception_raised) == "SIC codes should be at most 5 digits long."
+    assert str(exception_raised) == (
+        "SIC is supported from Section A (01000) through Section U (99999)."
+    )
 
 def test_below_section_a():
     with pytest.raises(InvalidSICCodeError) as exc_info:
-        sic = SIC("00000")
+        sic = SIC("00123")
         print(sic.code)
 
     exception_raised = exc_info.value
-    assert str(exception_raised) == "SIC is supported from Section A (01000) through Section U."
+    assert str(exception_raised) == (
+        "SIC is supported from Section A (01000) through Section U (99999)."
+    )
+
+def test_class_str():
+    sic = SIC(58290)
+    assert str(sic) == "58290"
 
 def test_class_repr():
     sic = SIC(58290)
@@ -67,3 +75,22 @@ def test_sic_component(example_input: str, expectation: Component):
 def test_section(example_input: str, expectation: str):
     sic = SIC(example_input)
     assert sic.section == expectation
+
+def test_provided_level() -> None:
+    sic = SIC("1234", level=3)
+    assert sic.code == "12300"
+
+def test_level_setter() -> None:
+    sic = SIC("1234")
+    sic.set_level(2)
+    assert sic.code == "12000"
+
+def test_level_out_of_range() -> None:
+    with pytest.raises(ValueError) as exc_info:
+        sic = SIC(26514, level=6)
+        print(sic.code)
+
+    exception_raised = exc_info.value
+    assert str(exception_raised) == (
+        "SIC digit levels must be between 2 and 5 inclusive."
+    )

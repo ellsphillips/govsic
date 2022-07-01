@@ -1,9 +1,12 @@
+from __future__ import annotations
+
 import string
 from dataclasses import dataclass
-from typing import Union
+from typing import Optional, Union
 
+from govsic import parse
 from govsic.constants import Component, SectionBoundaries
-from govsic.data.glossary import SIC_GLOSSARY
+from govsic.data import SIC_GLOSSARY, Sections
 from govsic.exceptions import InvalidSICCodeError
 
 SICCode = Union[str, int]
@@ -16,25 +19,32 @@ class SIC:
 
     Attributes:
         code (int, str): uksic07-supported code.
+        level (int, None): integer depth (2-5) to truncate the sic code.
     """
 
     code: SICCode = ""
+    level: Optional[int] = None
 
     def __post_init__(self) -> None:
         """
         Auto parse the instantiated SIC code and check structural validity.
         """
-        if len(str(self.code)) > 5:
+        self.code = parse(self.code)
+
+        if self.level is not None:
+            self.set_level(self.level)
+
+        if not 1000 <= int(str(self.code).ljust(5, '0')) <= 99999:
             raise InvalidSICCodeError(
-                message="SIC codes should be at most 5 digits long."
+                message="SIC is supported from Section A (01000) through Section U (99999)."
             )
 
-        if int(self.code) < 1000:
-            raise InvalidSICCodeError(
-                message="SIC is supported from Section A (01000) through Section U."
-            )
+    def set_level(self, level: int) -> None:
+        if not 2 <= level <= 5:
+            raise ValueError("SIC digit levels must be between 2 and 5 inclusive.")
 
-        self.code = str(self.code).zfill(5)
+        self.level = level
+        self.code = str(self.code)[:level].ljust(5, "0")
 
     @property
     def is_valid(self) -> bool:
