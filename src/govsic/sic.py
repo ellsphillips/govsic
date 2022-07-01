@@ -98,7 +98,7 @@ class SIC:
     def as_dict(self) -> Dict[str, Any]:
         return {
             "value": str(self.code),
-            "valid?": self.is_valid,
+            "valid": self.is_valid,
             "section": self.section,
             "component": self.component,
             "description": (
