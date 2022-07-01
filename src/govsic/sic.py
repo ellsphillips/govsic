@@ -40,6 +40,12 @@ class SIC:
             )
 
     def set_level(self, level: int) -> None:
+        """
+        Setter method for specifying the SIC code level.
+
+        Args:
+            level (int): integer depth to set the SIC code.
+        """
         if not 2 <= level <= 5:
             raise ValueError("SIC digit levels must be between 2 and 5 inclusive.")
 
@@ -75,6 +81,10 @@ class SIC:
         return string.ascii_uppercase[bucket - 1]
 
     def summary(self) -> str:
+        """
+        Get all relevant information about the provided SIC code, including section, code value,
+        component, and description.
+        """
         section = Sections[self.section].value
 
         if not self.is_valid:
@@ -96,6 +106,9 @@ class SIC:
         ])
 
     def as_dict(self) -> Dict[str, Any]:
+        """
+        Get the dictionary respresentation of the SIC data structure with the provided code.
+        """
         return {
             "value": str(self.code),
             "valid": self.is_valid,
