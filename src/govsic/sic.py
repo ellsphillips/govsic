@@ -31,15 +31,13 @@ class SIC:
         """
         self.code = parse(self.code)
 
-        print("lmao", self.code)
-
-        if self.level is not None:
-            self.set_level(self.level)
-
         self.__resolutions = [
             self.code[:i - 3].ljust(5, "0")
             for i in range(3)
         ] + [self.code]
+
+        if self.level is not None:
+            self.set_level(self.level)
 
         if not 1000 <= int(self.code) <= 99999:
             raise InvalidSICCodeError(

@@ -94,3 +94,14 @@ def test_level_out_of_range() -> None:
     assert str(exception_raised) == (
         "SIC digit levels must be between 2 and 5 inclusive."
     )
+
+def test_dictionary_container() -> None:
+    expectation = {
+        'value': '56302',
+        'valid': True,
+        'section': 'I',
+        'component': 'SUBCLASS',
+        'description': ['Public houses and bars']
+    }
+
+    assert SIC(56302).as_dict() == expectation
