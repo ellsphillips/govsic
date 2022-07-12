@@ -20,7 +20,7 @@ class SIC:
         level (int, None): integer depth (2-5) to truncate the sic code.
     """
 
-    code: SICCode = ""
+    code: SICCode
     level: Optional[int] = None
 
     __resolutions: List[str] = field(default_factory=list, init=False)
