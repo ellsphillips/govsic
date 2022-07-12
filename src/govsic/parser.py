@@ -1,11 +1,13 @@
 from dataclasses import dataclass
 from typing import Dict, Optional, Protocol, Type, Union
 
+from govsic.types import SICCode
+
 
 @dataclass
 class ParsingStrategy(Protocol):
 
-    code: str
+    code: SICCode
     level: Optional[int] = None
 
     @property
@@ -15,7 +17,7 @@ class ParsingStrategy(Protocol):
 @dataclass
 class IntegerSICParsingStrategy:
 
-    code: str
+    code: SICCode
     level: Optional[int] = None
 
     @property
@@ -25,7 +27,7 @@ class IntegerSICParsingStrategy:
 @dataclass
 class StringSICParsingStrategy:
 
-    code: str
+    code: SICCode
     level: Optional[int] = None
 
     @property
@@ -41,7 +43,7 @@ PARSERS: Dict[Union[Type[int], Type[str]], Type[ParsingStrategy]] = {
 
 
 def parse(
-    code: Union[str, int],
+    code: SICCode,
     level: Optional[int] = None,
 ) -> str:
     for _t, _p in PARSERS.items():

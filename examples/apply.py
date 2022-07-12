@@ -16,7 +16,7 @@ def main() -> None:
         "classification": ["46491", "56302", "98200"]
     })
 
-    data["classification"] = data["classification"].map(SIC) 
+    data["classification"] = data["classification"].map(SIC)
     data["section"] = data["classification"].map(lambda sic: sic.section)
 
     example: SIC = data["classification"].values[0]

@@ -1,15 +1,13 @@
-from __future__ import annotations
-
 import string
-from dataclasses import dataclass
-from typing import Any, Dict, Optional, Union
+from dataclasses import dataclass, field
+from typing import Any, Dict, List, Optional
 
 from govsic import parse
 from govsic.constants import Component, SectionBoundaries
 from govsic.data import SIC_GLOSSARY, Sections
 from govsic.exceptions import InvalidSICCodeError
+from govsic.types import SICCode
 
-SICCode = Union[str, int]
 
 @dataclass
 class SIC:
@@ -25,16 +23,25 @@ class SIC:
     code: SICCode = ""
     level: Optional[int] = None
 
+    __resolutions: List[str] = field(default_factory=list, init=False)
+
     def __post_init__(self) -> None:
         """
-        Auto parse the instantiated SIC code and check structural validity.
+        Auto parse the given SIC code, check its structural validity, and compute all resolutions.
         """
         self.code = parse(self.code)
+
+        print("lmao", self.code)
 
         if self.level is not None:
             self.set_level(self.level)
 
-        if not 1000 <= int(str(self.code).ljust(5, '0')) <= 99999:
+        self.__resolutions = [
+            self.code[:i - 3].ljust(5, "0")
+            for i in range(3)
+        ] + [self.code]
+
+        if not 1000 <= int(self.code) <= 99999:
             raise InvalidSICCodeError(
                 message="SIC is supported from Section A (01000) through Section U (99999)."
             )
@@ -50,7 +57,7 @@ class SIC:
             raise ValueError("SIC digit levels must be between 2 and 5 inclusive.")
 
         self.level = level
-        self.code = str(self.code)[:level].ljust(5, "0")
+        self.code = self.__resolutions[level - 2]
 
     @property
     def is_valid(self) -> bool:
@@ -134,6 +141,6 @@ class SIC:
 
     def __str__(self) -> str:
         """
-        String representation of the given code
+        String representation of the given code.
         """
         return str(self.code)
