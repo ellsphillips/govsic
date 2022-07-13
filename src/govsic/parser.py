@@ -1,21 +1,24 @@
+from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Dict, Optional, Protocol, Type, Union
+from typing import Dict, Optional, Type, Union
 
 from govsic.types import SICCode
 
 
 @dataclass
-class ParsingStrategy(Protocol):
+class ParsingStrategy(ABC):
 
     code: SICCode
     level: Optional[int] = None
 
     @property
-    def result(self) -> str: ...
+    @abstractmethod
+    def result(self) -> str:
+        """Abstract property for SIC parsing strategy"""
 
 
 @dataclass
-class IntegerSICParsingStrategy:
+class IntegerSICParsingStrategy(ParsingStrategy):
 
     code: SICCode
     level: Optional[int] = None
@@ -25,7 +28,7 @@ class IntegerSICParsingStrategy:
         return str(self.code).zfill(5)
 
 @dataclass
-class StringSICParsingStrategy:
+class StringSICParsingStrategy(ParsingStrategy):
 
     code: SICCode
     level: Optional[int] = None
