@@ -1,8 +1,19 @@
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Dict, Optional, Type, Union
+from typing import Dict, List, Optional, Type, Union
 
+from govsic.constants import DORMANT
 from govsic.types import SICCode
+
+
+def compute_resolutions(code: str) -> List[str]:
+    if int(code) == DORMANT:
+        return [*[str(DORMANT)]] * 4
+
+    return [
+        code[:i - 3].ljust(5, "0")
+        for i in range(3)
+    ] + [code]
 
 
 @dataclass

@@ -5,6 +5,7 @@ from typing import Any, Dict, List, Optional
 from govsic.constants import DORMANT, Component, SectionBoundaries
 from govsic.data import SIC_GLOSSARY, Sections
 from govsic.exceptions import InvalidSICCodeError
+from govsic.parser import compute_resolutions, parse
 from govsic.types import SICCode
 
 
@@ -30,10 +31,7 @@ class SIC:
         """
         self.code = parse(self.code)
 
-        self.__resolutions = [
-            self.code[:i - 3].ljust(5, "0")
-            for i in range(3)
-        ] + [self.code]
+        self.__resolutions = compute_resolutions(self.code)
 
         if self.level is not None:
             self.set_level(self.level)
