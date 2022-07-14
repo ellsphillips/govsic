@@ -1,6 +1,8 @@
 from enum import Enum, auto
 
 
+DORMANT: int = 99999
+
 class Component(Enum):
     SECTION = auto()
     DIVISION = auto()

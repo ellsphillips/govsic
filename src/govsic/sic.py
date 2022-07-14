@@ -2,8 +2,7 @@ import string
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
-from govsic import parse
-from govsic.constants import Component, SectionBoundaries
+from govsic.constants import DORMANT, Component, SectionBoundaries
 from govsic.data import SIC_GLOSSARY, Sections
 from govsic.exceptions import InvalidSICCodeError
 from govsic.types import SICCode
@@ -81,7 +80,10 @@ class SIC:
         """
         Retrieve the SIC Section that the given code corresponds to.
         """
-        bounds = [int(b.value) for b in SectionBoundaries]
+        if int(self.code) == DORMANT:
+            return "DORMANT"
+
+        bounds = [int(b.value) for b in SectionBoundaries] + [DORMANT]
         bucket = next(x[0] for x in enumerate(bounds) if x[1] > int(self.code))
         return string.ascii_uppercase[bucket - 1]
 
