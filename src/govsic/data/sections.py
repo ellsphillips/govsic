@@ -1,5 +1,6 @@
+# pylint: disable=line-too-long
+
 from dataclasses import dataclass
-from enum import Enum
 from typing import Tuple
 
 
@@ -14,17 +15,40 @@ class Section:
     long_description: str
 
 
-class Sections(Enum):
-    """
-    Lookup table for SIC Sections, complete with domains and descriptions.
-    """
+@dataclass
+class Sections:
+    # pylint: disable=invalid-name
+    A: Section
+    B: Section
+    C: Section
+    D: Section
+    E: Section
+    F: Section
+    G: Section
+    H: Section
+    I: Section
+    J: Section
+    K: Section
+    L: Section
+    M: Section
+    N: Section
+    O: Section
+    P: Section
+    Q: Section
+    R: Section
+    S: Section
+    T: Section
+    U: Section
+
+
+SECTION = Sections(
     A = Section(
         domain = (1000, 4999),
         description = "Agriculture, forestry and fishing",
         long_description = description("""
             This section includes the exploitation of vegetable and animal natural resources, comprising the activities of growing crops, raising and breeding animals, harvesting timber and other plants, animals or animal products from a farm or their natural habitats.
         """)
-    )
+    ),
     B = Section(
         domain = (5000, 9999),
         description = "Mining and quarrying",
@@ -34,7 +58,7 @@ class Sections(Enum):
             Mining activities are classified into divisions, groups and classes on the basis of the principal mineral produced. Divisions 05, 06 are concerned with mining and quarrying of fossil fuels (coal, lignite, petroleum, gas); divisions 07, 08 concern metal ores, various minerals and quarry products.
             Some of the technical operations of this section, particularly related to the extraction of hydrocarbons, may also be carried out for third parties by specialised units as an industrial service which is reflected in division 09.
         """)
-    )
+    ),
     C = Section(
         domain = (10000, 34999),
         description = "Manufacturing",
@@ -47,7 +71,7 @@ class Sections(Enum):
             Specialised maintenance and repair of industrial, commercial and similar machinery and equipment is, in general, classified in division 33 (Repair, maintenance and installation of machinery and equipment). However, the repair of computers and personal and household goods is classified in division 95 (Repair of computers and personal and household goods), while the repair of motor vehicles is classified in division 45 (Wholesale and retail trade and repair of motor vehicles and motorcycles).
             The installation of machinery and equipment, when carried out as a specialised activity, is classified in 33.20.
         """)
-    )
+    ),
     D = Section(
         domain = (35000, 35999),
         description = "Electricity, gas, steam and air conditioning supply",
@@ -56,7 +80,7 @@ class Sections(Enum):
             This section therefore includes the operation of electric and gas utilities, which generate, control and distribute electric power or gas. Also included is the provision of steam and air-conditioning supply.
             This section excludes the operation of water and sewerage utilities, see 36, 37. This section also excludes the (typically long-distance) transport of gas through pipelines.
         """)
-    )
+    ),
     E = Section(
         domain = (36000, 40999),
         description = "Water supply; sewerage, waste management and remediation activities",
@@ -64,7 +88,7 @@ class Sections(Enum):
             This section includes activities related to the management (including collection, treatment and disposal) of various forms of waste, such as solid or non-solid industrial or household waste, as well as contaminated sites. The output of the waste or sewage treatment process can either be disposed of or become an input into other production processes.
             Activities of water supply are also grouped in this section, since they are often carried out in connection with, or by units also engaged in, the treatment of sewage.
         """)
-    )
+    ),
     F = Section(
         domain = (41000, 44999),
         description = "Construction",
@@ -78,7 +102,7 @@ class Sections(Enum):
             This section also includes the development of building projects for buildings or civil engineering works by bringing together financial, technical and physical means to realise the construction projects for later sale.
             If these activities are carried out not for later sale of the construction projects, but for their operation (e.g. renting of space in these buildings, manufacturing activities in these plants), the unit would not be classified here, but according to its operational activity, i.e. real estate, manufacturing etc.
         """)
-    )
+    ),
     G = Section(
         domain = (45000, 48999),
         description = "Wholesale and retail trade; repair of motor vehicles and motorcycles",
@@ -90,7 +114,7 @@ class Sections(Enum):
             Wholesalers frequently physically assemble, sort and grade goods in large lots, break bulk, repack and redistribute in smaller lots, for example pharmaceuticals; store, refrigerate, deliver and install goods, engage in sales promotion for their customers and label design.
             Retailing is the resale (sale without transformation) of new and used goods mainly to the general public for personal or household consumption or utilisation, by shops, department stores, stalls, mail-order houses, door-to-door sales persons, hawkers, consumer cooperatives, auction houses etc. Most retailers take title to the goods they sell, but some act as agents for a principal and sell either on consignment or on a commission basis.
         """)
-    )
+    ),
     H = Section(
         domain = (49000, 54999),
         description = "Transportation and storage",
@@ -102,7 +126,7 @@ class Sections(Enum):
                 - maintenance and repair of motor vehicles, see 45.20
                 - renting of transport equipment without driver or operator, see 77.1, 77.3
         """)
-    )
+    ),
     I = Section(
         domain = (55000, 57999),
         description = "Accommodation and food service activities",
@@ -110,7 +134,7 @@ class Sections(Enum):
             This section includes the provision of short-stay accommodation for visitors and other travellers and the provision of complete meals and drinks fit for immediate consumption. The amount and type of supplementary services provided within this section can vary widely.
             This section excludes the provision of long-term accommodation as primary residences, which is classified in real estate activities (section L). Also excluded is the preparation of food or drinks that are either not fit for immediate consumption or that are sold through independent distribution channels, i.e. through wholesale or retail trade activities. The preparation of these foods is classified in manufacturing (section C).
         """)
-    )
+    ),
     J = Section(
         domain = (58000, 63999),
         description = "Information and communication",
@@ -120,7 +144,7 @@ class Sections(Enum):
             Publishing includes the acquisition of copyrights for content (information products) and making this content available to the general public by engaging in (or arranging for) the reproduction and distribution of this content in various forms. All the feasible forms of publishing (in print, electronic or audio form, on the internet, as multimedia products such as CD-ROM reference books etc.) are included in this section.
             Activities related to production and distribution of TV programming span divisions 59, 60 and 61, reflecting different stages in this process. Individual components, such as movies, television series etc. are produced by activities in division 59, while the creation of a complete television channel programme, from components produced in division 59 or other components (such as live news programming) is included in division 60. Division 60 also includes the broadcasting of this programme by the producer. The distribution of the complete television programme by third parties, i.e. without any alteration of the content, is included in division 61. This distribution in division 61 can be done through broadcasting, satellite or cable systems.
         """)
-    )
+    ),
     K = Section(
         domain = (64000, 67999),
         description = "Financial and insurance activities",
@@ -128,7 +152,7 @@ class Sections(Enum):
             This section includes financial service activities, including insurance, reinsurance and pension funding activities, and activities to support financial services.
             This section also includes the activities of holding assets, such as activities of holding companies and the activities of trusts, funds and similar financial entities.
         """)
-    )
+    ),
     L = Section(
         domain = (68000, 68999),
         description = "Real estate activities",
@@ -137,21 +161,21 @@ class Sections(Enum):
             Also included is the building of structures, combined with maintaining ownership or leasing of such structures.
             This section includes real estate property managers.
         """)
-    )
+    ),
     M = Section(
         domain = (69000, 76999),
         description = "Professional, scientific and technical activities",
         long_description = description("""
             This section includes specialised professional, scientific and technical activities. These activities require a high degree of training, and make specialised knowledge and skills available to users.
         """)
-    )
+    ),
     N = Section(
         domain = (77000, 83999),
         description = "Administrative and support service activities",
         long_description = description("""
             This section includes a variety of activities that support general business operations. These activities differ from those in section M, in that their primary purpose is not the transfer of specialised knowledge.
         """)
-    )
+    ),
     O = Section(
         domain = (84000, 84999),
         description = "Public administration and defence; compulsory social security",
@@ -160,7 +184,7 @@ class Sections(Enum):
             This section also includes compulsory social security activities.
             The legal or institutional status is not, in itself, the determining factor for an activity to belong in this section, rather than the activity being of a nature specified in the previous paragraph. This means that activities classified elsewhere in SIC do not fall under this section, even if carried out by public entities. For example, administration of the school system (i.e. regulations, checks, curricula) falls under this section, but teaching itself does not (see section P), and a prison or military hospital is classified to health (see section Q). Similarly, some activities described in this section may be carried out by non-government units.
         """)
-    )
+    ),
     P = Section(
         domain = (85000, 85999),
         description = "Education",
@@ -171,35 +195,35 @@ class Sections(Enum):
             The breakdown of the categories in this section is based on the level of education offered as defined by the levels of ISCED 1997. The activities of educational institutions providing courses on ISCED level 0 are classified in 85.10, on ISCED level 1 in 85.20, on ISCED levels 2-3 in group 85.3, on ISCED level 4 in 85.41 and on ISCED level 5-6 in 85.42.
             This section also includes instruction primarily concerned with sport and recreational activities such as tennis or golf and education support activities.
         """)
-    )
+    ),
     Q = Section(
         domain = (86000, 89999),
         description = "Human health and social work activities",
         long_description = description("""
             This section includes the provision of health and social work activities. It covers a wide range of activities, from health care provided by trained medical professionals in hospitals and other facilities, to residential care activities that still involve a degree of health care activities and to social work activities not involving the services of health care professionals.
         """)
-    )
+    ),
     R = Section(
         domain = (90000, 93999),
         description = "Arts, entertainment and recreation",
         long_description = description("""
             This section includes a wide range of activities catering for various cultural, entertainment and recreational interests of the general public, including live performances, operation of museum sites, gambling, sports and recreation activities.
         """)
-    )
+    ),
     S = Section(
         domain = (94000, 96999),
         description = "Other service activities",
         long_description = description("""
             This section (as a residual category) includes the activities of membership organisations, the repair of computers and personal and household goods and a variety of personal service activities not covered elsewhere in the classification.
         """)
-    )
+    ),
     T = Section(
         domain = (97000, 98999),
         description = "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use",
         long_description = description("""
             Activities of households as employers of domestic personnel.
         """)
-    )
+    ),
     U = Section(
         domain = (99000, 99999),
         description = "Activities of extraterritorial organisations and bodies",
@@ -209,4 +233,5 @@ class Sections(Enum):
             This class also includes:
                 - activities of diplomatic and consular missions when being determined by the country of their location rather than by the– country they represent
         """)
-    )
+    ),
+)
