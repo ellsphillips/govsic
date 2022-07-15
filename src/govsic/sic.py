@@ -3,7 +3,8 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
 from govsic.constants import DORMANT, Component, SectionBoundaries
-from govsic.data import SIC_GLOSSARY, Sections
+from govsic.data import SIC_GLOSSARY
+from govsic.data.sections import SECTION, Section
 from govsic.exceptions import InvalidSICCodeError
 from govsic.parser import compute_resolutions, parse
 from govsic.types import SICCode
@@ -85,28 +86,34 @@ class SIC:
         bucket = next(x[0] for x in enumerate(bounds) if x[1] > int(self.code))
         return string.ascii_uppercase[bucket - 1]
 
+    @property
+    def description(self) -> List[str]:
+        """
+        Retrieve the SIC description at the current level.
+        """
+        if self.component == "DIVISION":
+            section: Section = SECTION.__dict__[self.section]
+            return [section.long_description.strip()]
+
+        return SIC_GLOSSARY[str(self.code)]
+
+
     def summary(self) -> str:
         """
         Get all relevant information about the provided SIC code, including section, code value,
         component, and description.
         """
-        section = Sections[self.section].value
+        section: Section = SECTION.__dict__[self.section]
 
         if not self.is_valid:
             raise ValueError
-
-        description = (
-            [section.long_description.strip()]
-            if self.component == "DIVISION"
-            else SIC_GLOSSARY[str(self.code)]
-        )
 
         return " ".join([
             f"{self!r} ::",
             "\n".join([
                 section.description.upper(),
                 f"{[c.name for c in Component].index(self.component) + 1}-digit description:",
-                *set(description if description else ""),
+                *set(self.description if self.description else ""),
             ])
         ])
 
@@ -115,15 +122,11 @@ class SIC:
         Get the dictionary respresentation of the SIC data structure with the provided code.
         """
         return {
-            "value": str(self.code),
+            "value": self.code,
             "valid": self.is_valid,
             "section": self.section,
             "component": self.component,
-            "description": (
-                [Sections[self.section].value.long_description.strip()]
-                if self.component == "DIVISION"
-                else SIC_GLOSSARY[str(self.code)]
-            )
+            "description": [*set(self.description)]
         }
 
     def __repr__(self) -> str:
