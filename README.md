@@ -2,7 +2,11 @@
 
 <h1><a href="https://www.github.com/ellsphillips/govsic"><img height=30 src="https://latex.codecogs.com/svg.latex?{\textsf{\bfseries\color[RGB]{233,80,14}govsic}}" alt="govsic"></a></h1>
 
-[![CI status](https://github.com/ellsphillips/sic/actions/workflows/config.yml/badge.svg)](https://github.com/ellsphillips/govsic) [![Supported Python versions](https://img.shields.io/pypi/pyversions/govsic.svg)](https://test.pypi.org/project/govsic/) [![PyPI version](https://img.shields.io/pypi/v/govsic.svg)](https://test.pypi.org/project/govsic/) [![License](https://img.shields.io/pypi/l/pyisic.svg)](https://github.com/ellsphillips/govsic/blob/master/LICENSE)
+[![CI status](https://github.com/ellsphillips/sic/actions/workflows/config.yml/badge.svg)](https://github.com/ellsphillips/govsic)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/govsic.svg)](https://test.pypi.org/project/govsic/)
+[![PyPI version](https://img.shields.io/pypi/v/govsic.svg)](https://test.pypi.org/project/govsic/)
+[![License](https://img.shields.io/pypi/l/pyisic.svg)](https://github.com/ellsphillips/govsic/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/pypi/dm/govsic?color=33cd57)](https://img.shields.io/pypi/dm/govsic?color=33cd57)
 
 </div>
 
