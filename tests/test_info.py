@@ -1,12 +1,18 @@
 import pytest
 from govsic.data.sections import description
+from govsic.exceptions import InvalidSICCodeError
 from govsic.sic import SIC
 
 
 def test_summary_valid():
-    sic = SIC(12345)
-    with pytest.raises(ValueError):
+    with pytest.raises(InvalidSICCodeError) as exc_info:
+        sic = SIC(12345)
         print(sic.summary())
+
+    exception_raised = exc_info.value
+    assert str(exception_raised) == (
+        "The code provided is not in the official SIC glossary."
+    )
 
 SUMMARY_TEST_EXAMPLES = [
     (
