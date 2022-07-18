@@ -8,11 +8,6 @@ def description(text: str) -> str:
     return text.strip().replace(" " * 4, "")
 
 
-@dataclass
-class Section:
-    domain: Tuple[int, int]
-    description: str
-    long_description: str
 
 
 @dataclass
