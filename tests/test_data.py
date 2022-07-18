@@ -1,16 +1,16 @@
-from govsic.data.sections import SECTION
+from govsic.data.sections import SECTIONS
 
 
 def get_all_section_domains():
     return [
         d
-        for section in SECTION.__dict__.values()
+        for section in SECTIONS.values()
         for d in section.domain
     ]
 
 
 def test_section_lut_length():
-    assert len(SECTION.__dict__) == 21
+    assert len(SECTIONS) == 21
 
 def test_section_lut_domain_uniqueness():
     domains = get_all_section_domains()

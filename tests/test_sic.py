@@ -3,8 +3,9 @@ from typing import Any
 
 import pytest
 from govsic import SIC
-from govsic.constants import DORMANT, Component
+from govsic.constants import DORMANT
 from govsic.exceptions import InvalidSICCodeError
+from govsic.types import Component
 
 
 def test_post_init_parser() -> None:
