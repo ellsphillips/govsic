@@ -1,7 +1,8 @@
 # pylint: disable=line-too-long
 
-from dataclasses import dataclass
-from typing import Tuple
+from typing import Dict
+
+from govsic.types import Section
 
 
 def description(text: str) -> str:
@@ -9,42 +10,15 @@ def description(text: str) -> str:
 
 
 
-
-@dataclass
-class Sections:
-    # pylint: disable=invalid-name
-    A: Section
-    B: Section
-    C: Section
-    D: Section
-    E: Section
-    F: Section
-    G: Section
-    H: Section
-    I: Section
-    J: Section
-    K: Section
-    L: Section
-    M: Section
-    N: Section
-    O: Section
-    P: Section
-    Q: Section
-    R: Section
-    S: Section
-    T: Section
-    U: Section
-
-
-SECTION = Sections(
-    A = Section(
+SECTIONS: Dict[str, Section] = {
+    "A": Section(
         domain = (1000, 4999),
         description = "Agriculture, forestry and fishing",
         long_description = description("""
             This section includes the exploitation of vegetable and animal natural resources, comprising the activities of growing crops, raising and breeding animals, harvesting timber and other plants, animals or animal products from a farm or their natural habitats.
         """)
     ),
-    B = Section(
+    "B": Section(
         domain = (5000, 9999),
         description = "Mining and quarrying",
         long_description = description("""
@@ -54,7 +28,7 @@ SECTION = Sections(
             Some of the technical operations of this section, particularly related to the extraction of hydrocarbons, may also be carried out for third parties by specialised units as an industrial service which is reflected in division 09.
         """)
     ),
-    C = Section(
+    "C": Section(
         domain = (10000, 34999),
         description = "Manufacturing",
         long_description = description("""
@@ -67,7 +41,7 @@ SECTION = Sections(
             The installation of machinery and equipment, when carried out as a specialised activity, is classified in 33.20.
         """)
     ),
-    D = Section(
+    "D": Section(
         domain = (35000, 35999),
         description = "Electricity, gas, steam and air conditioning supply",
         long_description = description("""
@@ -76,7 +50,7 @@ SECTION = Sections(
             This section excludes the operation of water and sewerage utilities, see 36, 37. This section also excludes the (typically long-distance) transport of gas through pipelines.
         """)
     ),
-    E = Section(
+    "E": Section(
         domain = (36000, 40999),
         description = "Water supply; sewerage, waste management and remediation activities",
         long_description = description("""
@@ -84,7 +58,7 @@ SECTION = Sections(
             Activities of water supply are also grouped in this section, since they are often carried out in connection with, or by units also engaged in, the treatment of sewage.
         """)
     ),
-    F = Section(
+    "F": Section(
         domain = (41000, 44999),
         description = "Construction",
         long_description = description("""
@@ -98,7 +72,7 @@ SECTION = Sections(
             If these activities are carried out not for later sale of the construction projects, but for their operation (e.g. renting of space in these buildings, manufacturing activities in these plants), the unit would not be classified here, but according to its operational activity, i.e. real estate, manufacturing etc.
         """)
     ),
-    G = Section(
+    "G": Section(
         domain = (45000, 48999),
         description = "Wholesale and retail trade; repair of motor vehicles and motorcycles",
         long_description = description("""
@@ -110,7 +84,7 @@ SECTION = Sections(
             Retailing is the resale (sale without transformation) of new and used goods mainly to the general public for personal or household consumption or utilisation, by shops, department stores, stalls, mail-order houses, door-to-door sales persons, hawkers, consumer cooperatives, auction houses etc. Most retailers take title to the goods they sell, but some act as agents for a principal and sell either on consignment or on a commission basis.
         """)
     ),
-    H = Section(
+    "H": Section(
         domain = (49000, 54999),
         description = "Transportation and storage",
         long_description = description("""
@@ -122,7 +96,7 @@ SECTION = Sections(
                 - renting of transport equipment without driver or operator, see 77.1, 77.3
         """)
     ),
-    I = Section(
+    "I": Section(
         domain = (55000, 57999),
         description = "Accommodation and food service activities",
         long_description = description("""
@@ -130,7 +104,7 @@ SECTION = Sections(
             This section excludes the provision of long-term accommodation as primary residences, which is classified in real estate activities (section L). Also excluded is the preparation of food or drinks that are either not fit for immediate consumption or that are sold through independent distribution channels, i.e. through wholesale or retail trade activities. The preparation of these foods is classified in manufacturing (section C).
         """)
     ),
-    J = Section(
+    "J": Section(
         domain = (58000, 63999),
         description = "Information and communication",
         long_description = description("""
@@ -140,7 +114,7 @@ SECTION = Sections(
             Activities related to production and distribution of TV programming span divisions 59, 60 and 61, reflecting different stages in this process. Individual components, such as movies, television series etc. are produced by activities in division 59, while the creation of a complete television channel programme, from components produced in division 59 or other components (such as live news programming) is included in division 60. Division 60 also includes the broadcasting of this programme by the producer. The distribution of the complete television programme by third parties, i.e. without any alteration of the content, is included in division 61. This distribution in division 61 can be done through broadcasting, satellite or cable systems.
         """)
     ),
-    K = Section(
+    "K": Section(
         domain = (64000, 67999),
         description = "Financial and insurance activities",
         long_description = description("""
@@ -148,7 +122,7 @@ SECTION = Sections(
             This section also includes the activities of holding assets, such as activities of holding companies and the activities of trusts, funds and similar financial entities.
         """)
     ),
-    L = Section(
+    "L": Section(
         domain = (68000, 68999),
         description = "Real estate activities",
         long_description = description("""
@@ -157,21 +131,21 @@ SECTION = Sections(
             This section includes real estate property managers.
         """)
     ),
-    M = Section(
+    "M": Section(
         domain = (69000, 76999),
         description = "Professional, scientific and technical activities",
         long_description = description("""
             This section includes specialised professional, scientific and technical activities. These activities require a high degree of training, and make specialised knowledge and skills available to users.
         """)
     ),
-    N = Section(
+    "N": Section(
         domain = (77000, 83999),
         description = "Administrative and support service activities",
         long_description = description("""
             This section includes a variety of activities that support general business operations. These activities differ from those in section M, in that their primary purpose is not the transfer of specialised knowledge.
         """)
     ),
-    O = Section(
+    "O": Section(
         domain = (84000, 84999),
         description = "Public administration and defence; compulsory social security",
         long_description = description("""
@@ -180,7 +154,7 @@ SECTION = Sections(
             The legal or institutional status is not, in itself, the determining factor for an activity to belong in this section, rather than the activity being of a nature specified in the previous paragraph. This means that activities classified elsewhere in SIC do not fall under this section, even if carried out by public entities. For example, administration of the school system (i.e. regulations, checks, curricula) falls under this section, but teaching itself does not (see section P), and a prison or military hospital is classified to health (see section Q). Similarly, some activities described in this section may be carried out by non-government units.
         """)
     ),
-    P = Section(
+    "P": Section(
         domain = (85000, 85999),
         description = "Education",
         long_description = description("""
@@ -191,35 +165,35 @@ SECTION = Sections(
             This section also includes instruction primarily concerned with sport and recreational activities such as tennis or golf and education support activities.
         """)
     ),
-    Q = Section(
+    "Q": Section(
         domain = (86000, 89999),
         description = "Human health and social work activities",
         long_description = description("""
             This section includes the provision of health and social work activities. It covers a wide range of activities, from health care provided by trained medical professionals in hospitals and other facilities, to residential care activities that still involve a degree of health care activities and to social work activities not involving the services of health care professionals.
         """)
     ),
-    R = Section(
+    "R": Section(
         domain = (90000, 93999),
         description = "Arts, entertainment and recreation",
         long_description = description("""
             This section includes a wide range of activities catering for various cultural, entertainment and recreational interests of the general public, including live performances, operation of museum sites, gambling, sports and recreation activities.
         """)
     ),
-    S = Section(
+    "S": Section(
         domain = (94000, 96999),
         description = "Other service activities",
         long_description = description("""
             This section (as a residual category) includes the activities of membership organisations, the repair of computers and personal and household goods and a variety of personal service activities not covered elsewhere in the classification.
         """)
     ),
-    T = Section(
+    "T": Section(
         domain = (97000, 98999),
         description = "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use",
         long_description = description("""
             Activities of households as employers of domestic personnel.
         """)
     ),
-    U = Section(
+    "U": Section(
         domain = (99000, 99999),
         description = "Activities of extraterritorial organisations and bodies",
         long_description = description("""
@@ -229,4 +203,4 @@ SECTION = Sections(
                 - activities of diplomatic and consular missions when being determined by the country of their location rather than by the– country they represent
         """)
     ),
-)
+}
