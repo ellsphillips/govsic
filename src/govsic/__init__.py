@@ -4,15 +4,17 @@ from govsic.parser import parse
 from govsic.sic import SIC
 from govsic.types import Component
 
-__version__ = (1, 1, 4)
+__version__ = (1, 1, 5)
 
 __all__ = [
+    # constants
+    "BINS",
     "CODES",
     "DORMANT",
     "LETTERS",
-    "Component",
-    "BINS",
     "SECTIONS",
+    "Component",
+    # classification
     "parse",
     "SIC"
 ]
