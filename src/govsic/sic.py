@@ -2,12 +2,12 @@ import string
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
-from govsic.constants import DORMANT, Component, SectionBoundaries
+from govsic.constants import BINS, DORMANT
 from govsic.data import SIC_GLOSSARY
-from govsic.data.sections import SECTION, Section
+from govsic.data.sections import SECTIONS
 from govsic.exceptions import InvalidSICCodeError
 from govsic.parser import compute_resolutions, parse
-from govsic.types import SICCode
+from govsic.types import Component, SICCode
 
 
 @dataclass
@@ -69,10 +69,12 @@ class SIC:
         has resolution 4 and returns 'CLASS'.
         """
         relevance = str(self.code)[:-4:-1]
+
         for index, character in enumerate(relevance):
             if int(character) > 0:
                 return list(Component)[len(str(self.code)) - index - 1].name
-        return "DIVISION"
+
+        return Component.DIVISION.name
 
     @property
     def section(self) -> str:
@@ -82,7 +84,7 @@ class SIC:
         if int(self.code) == DORMANT:
             return "DORMANT"
 
-        bounds = [int(b.value) for b in SectionBoundaries] + [DORMANT]
+        bounds = BINS + [DORMANT]
         bucket = next(x[0] for x in enumerate(bounds) if x[1] > int(self.code))
         return string.ascii_uppercase[bucket - 1]
 
@@ -91,8 +93,9 @@ class SIC:
         """
         Retrieve the SIC description at the current level.
         """
-        if self.component == "DIVISION":
-            section: Section = SECTION.__dict__[self.section]
+        section = SECTIONS[self.section]
+
+        if self.component == Component.DIVISION.name:
             return [section.long_description.strip()]
 
         return SIC_GLOSSARY[str(self.code)]
@@ -103,7 +106,7 @@ class SIC:
         Get all relevant information about the provided SIC code, including section, code value,
         component, and description.
         """
-        section: Section = SECTION.__dict__[self.section]
+        section = SECTIONS[self.section]
 
         if not self.is_valid:
             raise InvalidSICCodeError(
@@ -138,8 +141,7 @@ class SIC:
         """
         div, grp_cls, sub_cls = [str(self.code)[i:i+2] for i in range(0, len(str(self.code)), 2)]
         return (
-            f"[{self.section}] "
-            f"{div}.{grp_cls}/{sub_cls}"
+            f"[{self.section}] {div}.{grp_cls}/{sub_cls}"
         )
 
     def __str__(self) -> str:
