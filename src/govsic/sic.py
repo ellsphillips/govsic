@@ -106,7 +106,9 @@ class SIC:
         section: Section = SECTION.__dict__[self.section]
 
         if not self.is_valid:
-            raise ValueError
+            raise InvalidSICCodeError(
+                message="The code provided is not in the official SIC glossary."
+            )
 
         return " ".join([
             f"{self!r} ::",
