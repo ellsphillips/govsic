@@ -9,7 +9,7 @@ def main() -> None:
     example = SIC(56302)
 
     print(
-        print(json.dumps(example.as_dict(), indent=4))
+        json.dumps(example.as_dict(), indent=4),
     )
 
 
